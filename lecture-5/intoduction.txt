@@ -1,0 +1,5 @@
+//Server Application Responsibility:
+1.Listen Request;
+2.Process;
+3.Response;
+
