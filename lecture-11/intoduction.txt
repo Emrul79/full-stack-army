@@ -1,0 +1,13 @@
+//Server Application Responsibility:
+1.Listen Request;
+2.Process;
+3.Response;
+
+
+//both listen and response request are easy terms-- hard thing is processing;
+//For bettter processing , you should have DSA knowledge,problem solving skill etc;
+
+
+
+//when you use RAW node.js ,you have to repeat more code,but express made our life easy to easier.by using express we don't need to repeat ourselfs;
+

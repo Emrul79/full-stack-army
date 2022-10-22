@@ -1,0 +1,21 @@
+1.Array Operations:
+->Imperative Traverse.
+->Declerative Traverse.
+->Update.
+->Delete.
+->Mutation.
+->Map.
+->Filter.
+->Reduce.
+->Deep Copy vs Shallow Copy.
+
+2.Object Deep Drive.
+
+->Object Operations.
+->Function vs Method.
+
+3.Object As a Data-Structure.
+->Array Operations.
+->Object Over Array.
+
+4.Multi Dimentional Array;
