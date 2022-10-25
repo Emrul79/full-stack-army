@@ -97,7 +97,7 @@ const arr= [
 
 //find and finIndex method are mutable; find return the whole value,and fincIndex return the Index;
 
-
+//practing is the key
 
 //deleted something from an array:
 const index= arr.find((value)=>{
