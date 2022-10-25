@@ -45,9 +45,13 @@ const array = [
   "uhiuj",
   120,
   undefined,
+  'iyh8yh',
+  323,
+  undefined
 ];
 
-//create new array with numbers only(without creating a new array);
+//create new array with numbers only(without creating a new array):
+
 let count=0;
 for(let i=0; i<array.length; i++){
   for(let j=i; j<array.length-1; j++){
@@ -61,4 +65,21 @@ for(let i=0; i<array.length; i++){
   }
 }
 array.length -= count;
-console.log(array);
+
+//we can do the same thing in single line:
+
+const filteredArray= array.filter((value,index)=>typeof value === "number");
+
+
+//but when we campare this two solution , the efficient solution is use for loop;(first solution)!
+
+
+
+//fibonacchi using recursion:
+
+function fibonacchi(number){
+  if (number === 0 || number === 1) {
+    return 1;
+  }
+  return number * fibonacchi(number-1)
+}
