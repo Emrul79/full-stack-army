@@ -108,7 +108,10 @@ const deleted= arr.forEach((val,ind)=>{
     arr.splice(ind,2,{id:235525,name:'nahodul alam shuvo'})
   }
 })
+
 index.name='i am emrul hassan biplob,i am a mern stack web developer'
+index.id=6842;
+index.name='i am changed'
 // arr[index]={id:index+1, name:'my name is emrul hassan biplob'}
 console.log(arr);
 
