@@ -83,3 +83,35 @@ function fibonacchi(number){
   }
   return number * fibonacchi(number-1)
 }
+
+
+//updating array element:
+
+const arr= [
+{id:1, name:'biplob'},
+{id:2, name:'emrul'},
+{id:3, name:'hassan'},
+{id:4, name:'nishad'},
+{id:5, name:'nahim'}
+];
+
+//find and finIndex method are mutable; find return the whole value,and fincIndex return the Index;
+
+
+
+//deleted something from an array:
+const index= arr.find((value)=>{
+  return value.name === 'hassan';
+}) 
+const deleted= arr.forEach((val,ind)=>{
+  if(val.id ===3){
+    arr.splice(ind,2,{id:235525,name:'nahodul alam shuvo'})
+  }
+})
+index.name='i am emrul hassan biplob,i am a mern stack web developer'
+// arr[index]={id:index+1, name:'my name is emrul hassan biplob'}
+console.log(arr);
+
+//we can do the same thing using filter and splice method:
+//1.spilce method is muted,namely when we make changes it will change our orginal array;
+//2.filter method is unmuted,namely when we make change something it will never touched our main array;
