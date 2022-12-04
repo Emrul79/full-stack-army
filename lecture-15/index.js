@@ -17,6 +17,8 @@ function blog(req, res) {
   );
 }
 function innerRoute(req,res){
+    //this function is contains for response genarator. it will just genarate response.
+    //and pro
   res.send('<h1>this is simple inner route</h1>');
 }
 app.get('/blog',blog);
