@@ -13,7 +13,7 @@ function aboutpage(req,res){
 
 function blog(req, res) {
   res.send(
-    "<p>This is a blog page, amet consectetur adipisicing elit. Assumenda est sed veniam reprehenderit consectetur, quae aliquid sequi iste placeat eos maxime alias maiores nulla quod! Quia consectetur quis aspernatur nam.</p>"
+    "<p>i love you too This is a blog page, amet consectetur adipisicing elit. Assumenda est sed veniam reprehenderit consectetur, quae aliquid sequi iste placeat eos maxime alias maiores nulla quod! Quia consectetur quis aspernatur nam.</p>"
   );
 }
 function innerRoute(req,res){
