@@ -10,10 +10,55 @@ function aboutpage(req,res){
       "<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda est sed veniam reprehenderit consectetur, quae aliquid sequi iste placeat eos maxime alias maiores nulla quod! Quia consectetur quis aspernatur nam.</p>"
     );
 }
+const books = [
+  {
+    name: "Pother Pachali",
+    id: 1,
+    description: "this is books number one(1)",
+    pricing: 2545,
+  },
+  {
+    name: "Ekattorer Dinguli",
+    id: 2,
+    description: "this is books number two(2)",
+    pricing: 545,
+  },
+  ,
+  {
+    name: "Dakumar juli",
+    id: 3,
+    description: "this is books number three(3)",
+    pricing: 645,
+  },
+  {
+    name: "Pother Pachali",
+    id: 4,
+    description: "this is books number one(1)",
+    pricing: 345,
+  },
+  {
+    name: "Pother Pachali",
+    id: 5,
+    description: "this is books number one(1)",
+    pricing: 745,
+  },
+
+  {
+    name: "Pother Pachali",
+    id: 1,
+    description: "this is books number one(1)",
+    pricing: 560,
+  },
+];
+
+app.get('/books',(req,res)=>{
+  const filtered= books.filter((book)=>book.pricing<500)
+  res.json(filtered);
+})
 
 function blog(req, res) {
   res.send(
-    "<p>i love you too This is a blog page, amet consectetur adipisicing elit. Assumenda est sed veniam reprehenderit consectetur, quae aliquid sequi iste placeat eos maxime alias maiores nulla quod! Quia consectetur quis aspernatur nam.</p>"
+    // "<p>i love you too This is a blog page, amet consectetur adipisicing elit. Assumenda est sed veniam reprehenderit consectetur, quae aliquid sequi iste placeat eos maxime alias maiores nulla quod! Quia consectetur quis aspernatur nam.</p>"
   );
 }
 function innerRoute(req,res){
@@ -25,5 +70,5 @@ app.get('/blog',blog);
 app.get("/about", aboutpage);
 app.get("/about/inner", innerRoute);
 app.listen(port,()=>{
-    console.log(`app is running at ${port}`);
+    console.log(`app is running on port ${port}`);
 })
